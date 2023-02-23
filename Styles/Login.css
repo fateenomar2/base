@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,100;1,300;1,400&amp;display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #1652f0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    margin-left: 100px;
+    width: 140px;
+    height: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 80px;
+}
+#sinsc{
+    border: 2px solid white;
+    padding: 10px;
+}
+nav ul li{
+    margin: 0 15px 0 15px;
+    cursor: pointer;
+}
+
+
+form section{
+    display: flex;
+    align-items: center;
+    height: 0;
+}
+form section h3{
+    padding-right: 5px;
+    color: #1652f0;
+    border-right: rgb(155, 133, 133) 2px solid;
+}
+form section w{
+    padding-left: 5px;
+    color: rgb(65, 50, 50);
+    font-weight: 500;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.container form{
+    width: 350px;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+.container h1{
+    padding-bottom: 10px;
+    font-size: 32px;
+    font-weight: 400;
+}
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="password"]{
+    padding-left: 10px;
+    width: 90%;
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 3px;
+    border: 1.5px solid rgb(226, 226, 226);
+    outline: none;
+}
+.container form input[type="text"]:focus,
+.container form input[type="email"]:focus,
+.container form input[type="password"]:focus{
+    transition: all 0.5s ease-in-out;
+    border: 1.5px solid rgba(65, 82, 238, 0.829);
+}
+#btnc{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container form div{
+    margin-top: 16px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+form div p {
+    font-size: 12px;
+    color: rgb(126, 133, 165);
+    font-weight: 500;
+    
+}
+span{
+    display: flex;
+    align-items: center;
+}
+button{
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#1652f0),to(#0d40c6));
+    background-image: -webkit-linear-gradient(#1652f0,#0d40c6);
+    background-image: linear-gradient(#1652f0,#0d40c6);
+    border-color: #137dba;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    width: 250px;
+    height: 45px;
+}
+#ass{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding-top: 10px;
+}
+#ass a{
+    color: white;
+    text-decoration: none;
+    margin: 0 5px 0 5px;
+}
+#ass a:hover{
+    border-bottom: 1px solid white;
+}
+#Menu-Bar-Icon{
+    display: none;
+    font-size: 30px;
+    margin-right: 20px;
+}
+@media only screen and (max-width: 900px){
+    nav img{
+        margin-left: 30px;
+    }
+    nav ul{
+        margin-right: 18px;
+    }
+}
+@media only screen and (max-width: 700px){
+    nav ul{
+        display: none;
+    }
+    #Menu-Bar-Icon{
+        display: block;
+    }
+}
+@media only screen and (max-width: 390px){
+    form{
+        width: 5px;
+        padding: 0px 0px;
+    }
+}
